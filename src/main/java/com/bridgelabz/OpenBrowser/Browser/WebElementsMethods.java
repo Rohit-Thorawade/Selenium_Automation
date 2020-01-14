@@ -11,7 +11,6 @@ public class WebElementsMethods extends Base {
 
 	public static void main(String[] args) throws InterruptedException, AWTException {
 		
-
 		WebDriver driver = new ChromeDriver();
 		driver.get("http://www.facebook.com");
 

@@ -25,7 +25,6 @@ public class CapturingScreenshot  extends Base{
 		System.out.println(date1);
 		String date3 = date2.replaceAll(":", "_");
 		
-		
 		TakesScreenshot screenshot = (TakesScreenshot) driver;
 	
 		File srcFile = screenshot.getScreenshotAs(OutputType.FILE);
@@ -35,9 +34,7 @@ public class CapturingScreenshot  extends Base{
 		FileUtils.copyFile(srcFile, destFile);
 		Thread.sleep(3000);
 		
-		driver.close();
-		
-		
+		driver.close();	
 		
 	}
 	
