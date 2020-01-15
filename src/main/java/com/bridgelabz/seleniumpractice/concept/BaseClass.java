@@ -16,6 +16,7 @@ public class BaseClass {
 				"/home/admin-1/eclipse-workspace/SeleniumDemo/driver/chromedriver");
 		
 		driver =new ChromeDriver();
+		driver.manage().window().maximize();
 
 	}
 

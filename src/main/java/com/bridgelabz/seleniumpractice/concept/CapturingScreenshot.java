@@ -1,3 +1,8 @@
+/**
+ * @author Rohit Thorawade
+ * @Purpose Implementing Take Screenshot interface Method
+ *
+ */
 package com.bridgelabz.seleniumpractice.concept;
 
 import java.io.File;
