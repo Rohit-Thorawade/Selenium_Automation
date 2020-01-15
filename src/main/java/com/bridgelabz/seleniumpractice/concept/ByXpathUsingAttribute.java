@@ -3,28 +3,28 @@
  * @Purpose Implementing Xpath on facebook application for registration  purpose  
  *
  */
-package com.bridgelabz.OpenBrowser.Browser;
+package com.bridgelabz.seleniumpractice.concept;
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
 
-public class ByXpathUsingAttribute extends Base {
+public class ByXpathUsingAttribute extends BaseClass {
 			
 
-	public static void main(String[] args) throws InterruptedException {
+	public static void main(String[] args) throws InterruptedException
+	{
 
-		WebDriver driver = new ChromeDriver();
 		driver.get("http://www.facebook.com");
-	
 		String email_xpath ="//input[@name='email']";
 		driver.findElement(By.xpath(email_xpath)).sendKeys("rohit.thorawade51@gmail.com");
 
+		//finding Element using contains attribute 
 		driver.findElement(By.xpath("//input[contains(@id,'pass')]")).sendKeys("king@21324");
 		Thread.sleep(3000);
 		
+		//finding Element using contains attribute
 		driver.findElement(By.xpath("//input[contains(@id,'u_0_b')]")).click();
 		driver.close();
+	
 	}
 
 }
