@@ -20,6 +20,7 @@ public class JavaScriptExecutorMethods extends BaseClass {
 		int y= element.getLocation().getY();
 
 		JavascriptExecutor js = (JavascriptExecutor) driver;
+		Thread.sleep(2000);
 		js.executeScript("window.scrollBy("+x+","+y+")");
 		Thread.sleep(3000);
 		

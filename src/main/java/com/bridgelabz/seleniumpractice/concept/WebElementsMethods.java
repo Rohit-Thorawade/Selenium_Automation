@@ -35,7 +35,7 @@ public class WebElementsMethods extends BaseClass {
 		int emailId_width = emailId.getSize().getWidth();
 		System.out.println("width of the emailID Textbox::::" + emailId_width);
 
-		//finding the X co-ordinate of the emailId textbox
+		//finding the X co-ordinate of the emailId Textbox
 		int emailId_X = emailId.getLocation().getX();
 		System.out.println("X co-ordinate of the emailID Textbox::::" + emailId_X);
 		

@@ -3,7 +3,6 @@ package com.bridgelabz.seleniumpractice.concept;
 import static org.testng.Assert.assertEquals;
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.Rectangle;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterSuite;
@@ -30,15 +29,6 @@ public class TestClass {
 
 	}
 
-//	@Test(priority = 2)
-//	public void testDimension() {
-//
-//		Rectangle rect1 = driver.findElement(By.xpath("//input[@name='email']")).getRect();
-//		Rectangle rect2 = driver.findElement(By.xpath("//input[contains(@id,'pass')]")).getRect();
-//		assertEquals(rect1, rect2);
-//		System.out.println("i am second");
-//	}
-	
 	@DataProvider(name = "login data")
 	public Object[][] provideData() {
 
@@ -66,7 +56,7 @@ public class TestClass {
 	// closing browser
 	@AfterSuite(alwaysRun = true)
 	public void closeBrowser() {
-		driver.close();
+		// driver.close();
 	}
 
 }
