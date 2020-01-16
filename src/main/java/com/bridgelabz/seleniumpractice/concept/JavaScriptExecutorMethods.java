@@ -22,7 +22,7 @@ public class JavaScriptExecutorMethods extends BaseClass {
 		JavascriptExecutor js = (JavascriptExecutor) driver;
 		js.executeScript("window.scrollBy("+x+","+y+")");
 		Thread.sleep(3000);
-
+		
 		element.click();
 		Thread.sleep(3000);
 		driver.close();

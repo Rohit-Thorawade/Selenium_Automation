@@ -17,7 +17,6 @@ public class CapturingScreenshot  extends BaseClass{
 
 	public static void main(String[] args) throws IOException, InterruptedException
 	{
-
 		driver.get("http://www.google.com");	
 		Date date1 = new Date();
 		String date2 = date1.toString();		
