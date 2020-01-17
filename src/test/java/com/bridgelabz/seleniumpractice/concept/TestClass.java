@@ -2,10 +2,11 @@ package com.bridgelabz.seleniumpractice.concept;
 
 import static org.testng.Assert.assertEquals;
 
+import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.testng.annotations.AfterSuite;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
@@ -19,11 +20,13 @@ public class TestClass {
 
 	}
 
-	// opening Browser
+	// opening Browser and disabling browser level notifications
 	@BeforeSuite()
 	public void openBrowser() {
 
-		driver = new ChromeDriver();
+		ChromeOptions option =new ChromeOptions();
+		option.addArguments("--disable-notifications");
+		driver = new ChromeDriver(option);
 		driver.manage().window().maximize();
 		driver.get("http://www.facebook.com");
 
@@ -32,7 +35,7 @@ public class TestClass {
 	@DataProvider(name = "login data")
 	public Object[][] provideData() {
 
-		return new Object[][] { { "8109555221", "test@123" } };
+		return new Object[][] { { "8109555221", "testdata@123" } };
 
 	}
 
@@ -49,14 +52,33 @@ public class TestClass {
 		Thread.sleep(1000);
 		driver.findElement(By.xpath("//input[contains(@id,'u_0_b')]")).click();
 		Thread.sleep(1000);
-		System.out.println("i am first");
+		
 
+		//click on profile icon
+		driver.findElement(By.xpath("//span[@class='_1vp5']")).click();
+		Thread.sleep(2000);
+		//click on Add cover photo
+		driver.findElement(By.id("fbProfileCoverPhotoSelector")).click();
+		Thread.sleep(1000);
+		
+		//Click on OK Button
+		Alert alert = driver.switchTo().alert();
+		Thread.sleep(1000);
+		alert.accept();
+		
+		Thread.sleep(2000);
+		driver.findElement(By.id("fbProfileCoverPhotoSelector")).click();
+
+		Thread.sleep(1000);
+		
+		
+		
 	}
 
 	// closing browser
-	@AfterSuite(alwaysRun = true)
+	//@AfterSuite(alwaysRun = true)
 	public void closeBrowser() {
-		// driver.close();
+	 driver.close();
 	}
 
 }

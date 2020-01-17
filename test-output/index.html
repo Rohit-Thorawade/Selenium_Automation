@@ -102,7 +102,7 @@
                     <div class="method-list-content failed suite-Default_suite">
                       <span>
                         <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="com.bridgelabz.seleniumpractice.concept.TestAmazon" class="method navigator-link" hash-for-method="TestCreateAccount">TestCreateAccount</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="com.bridgelabz.seleniumpractice.concept.TestClass" class="method navigator-link" hash-for-method="testLogin(8109555221, testdata@123)">testLogin(8109555221, testdata@123)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-Default_suite -->
@@ -120,23 +120,22 @@
           <div class="suite-Default_suite-class-failed">
             <div class="main-panel-header rounded-window-top">
               <img src="failed.png"/>
-              <span class="class-name">com.bridgelabz.seleniumpractice.concept.TestAmazon</span>
+              <span class="class-name">com.bridgelabz.seleniumpractice.concept.TestClass</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="TestCreateAccount">
-                  </a> <!-- TestCreateAccount -->
-                  <span class="method-name">TestCreateAccount</span>
-                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//input[@placeholder=&apos;Search mail&apos;]&quot;}
+                  <a name="testLogin(8109555221, testdata@123)">
+                  </a> <!-- testLogin(8109555221, testdata@123) -->
+                  <span class="method-name">testLogin</span>
+                  <span class="parameters">(8109555221, testdata@123)</span>
+                  <div class="stack-trace">org.openqa.selenium.NoAlertPresentException: no such alert
   (Session info: chrome=79.0.3945.88)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
 System info: host: &apos;admin-1&apos;, ip: &apos;127.0.1.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;4.15.0-74-generic&apos;, java.version: &apos;11.0.5&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.88, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: /tmp/.com.google.Chrome.BBMUst}, goog:chromeOptions: {debuggerAddress: localhost:44607}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 462975a7e2dc12f9f2c2b33bd1a93ebf
-*** Element info: {Using=xpath, value=//input[@placeholder=&apos;Search mail&apos;]}
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.88, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: /tmp/.com.google.Chrome.bxGHdJ}, goog:chromeOptions: {debuggerAddress: localhost:44201}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 4246f449504bb40927e1d3aaaf259922
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -147,11 +146,9 @@ Session ID: 462975a7e2dc12f9f2c2b33bd1a93ebf
 	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at com.bridgelabz.seleniumpractice.concept.TestAmazon.TestCreateAccount(TestAmazon.java:62)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteTargetLocator.alert(RemoteWebDriver.java:932)
+	at com.bridgelabz.seleniumpractice.concept.TestClass.testLogin(TestClass.java:65)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -189,7 +186,7 @@ Session ID: 462975a7e2dc12f9f2c2b33bd1a93ebf
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">/tmp/testng-eclipse-217453267/testng-customsuite.xml</span>
+            <span class="header-content">/tmp/testng-eclipse-1193631802/testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -198,7 +195,7 @@ Session ID: 462975a7e2dc12f9f2c2b33bd1a93ebf
 &lt;suite name=&quot;Default suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Default test&quot; verbose=&quot;2&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;com.bridgelabz.seleniumpractice.concept.TestAmazon&quot;/&gt;
+      &lt;class name=&quot;com.bridgelabz.seleniumpractice.concept.TestClass&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Default test --&gt;
 &lt;/suite&gt; &lt;!-- Default suite --&gt;
@@ -240,14 +237,14 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(1);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'TestCreateAccount')
-data.setCell(0, 2, 'com.bridgelabz.seleniumpractice.concept.TestAmazon')
-data.setCell(0, 3, 20936);
+data.setCell(0, 1, 'testLogin')
+data.setCell(0, 2, 'com.bridgelabz.seleniumpractice.concept.TestClass')
+data.setCell(0, 3, 14003);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 20 seconds</span>
+              <span class="suite-total-time">Total running time: 14 seconds</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -273,7 +270,7 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">com.bridgelabz.seleniumpractice.concept.TestAmazon</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">com.bridgelabz.seleniumpractice.concept.TestClass</div> <!-- chronological-class-name -->
               <div class="configuration-suite before">
                 <span class="method-name">openBrowser</span>
                 <span class="method-start">0 ms</span>
@@ -281,13 +278,9 @@ return data;
               <div class="test-method">
                 <img src="failed.png">
                 </img>
-                <span class="method-name">TestCreateAccount</span>
-                <span class="method-start">4395 ms</span>
+                <span class="method-name">testLogin(8109555221, testdata@123)</span>
+                <span class="method-start">3644 ms</span>
               </div> <!-- test-method -->
-              <div class="configuration-suite after">
-                <span class="method-name">closeBrowser</span>
-                <span class="method-start">25383 ms</span>
-              </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->
