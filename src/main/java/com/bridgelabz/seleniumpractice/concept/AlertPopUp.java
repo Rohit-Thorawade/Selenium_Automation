@@ -13,6 +13,8 @@ public class AlertPopUp extends BaseClass {
 		Alert alert = driver.switchTo().alert();
 		// System.out.println("Alert Message:"+alert.getText());
 		String alertMsg = alert.getText();
+		
+		
 		// Validation for correct alert Message
 		if (alertMsg.equals("Please enter search keyword")) {
 			System.out.println("Correct Alert Message");
