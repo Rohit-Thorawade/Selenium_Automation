@@ -3,12 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.bridgelabz.seleniumpractice.concept.TestClass">
+      <class name="com.bridgelabz.seleniumpractice.concept.TestEbay">
         <methods>
-          <include name="openBrowser"/>
-          <include name="testLogin" invocation-numbers="0"/>
+          <include name="setup"/>
+          <include name="TestRegEbay"/>
+          <include name="tearDown"/>
         </methods>
-      </class> <!-- com.bridgelabz.seleniumpractice.concept.TestClass -->
+      </class> <!-- com.bridgelabz.seleniumpractice.concept.TestEbay -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

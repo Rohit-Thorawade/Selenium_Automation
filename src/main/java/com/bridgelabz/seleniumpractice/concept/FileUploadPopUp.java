@@ -13,7 +13,8 @@ public class FileUploadPopUp extends BaseClass {
 	
 		Thread.sleep(2000);
 		//driver.close();
-			
+
+	
 		
 	}
 	
