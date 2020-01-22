@@ -1,3 +1,8 @@
+/**
+ * @author Rohit Thorawade]
+ * @purpose Handling Alert Pop-up 
+ *
+ */
 package com.bridgelabz.seleniumpractice.concept;
 
 import org.openqa.selenium.Alert;

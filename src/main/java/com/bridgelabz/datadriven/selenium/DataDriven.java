@@ -1,3 +1,8 @@
+/**
+ * @author Rohit Thorawade]
+ * @purpose Implementing Data Driven Framework 
+ *
+ */
 package com.bridgelabz.datadriven.selenium;
 
 import java.io.IOException;
@@ -24,7 +29,7 @@ public class DataDriven extends BaseClass{
 		Xls_Reader reader = new Xls_Reader("/home/admin-1/eclipse-workspace/SeleniumDemo/src/test/java/com/bridgelabz/datadriven/selenium/test/EbayTestData.xlsx");
 
 		//add column into excel sheet
-		reader.addColumn("RegTestData","Status");
+		//reader.addColumn("RegTestData","Status");
 		
 		//calculating row count
 		int rowcount = reader.getRowCount("RegTestData");
@@ -61,7 +66,7 @@ public class DataDriven extends BaseClass{
 			pass.sendKeys(password);
 			Thread.sleep(1000);	
 			
-			reader.setCellData("RegTestData", "Status", rowNum, "Pass");
+			//reader.setCellData("RegTestData", "Status", rowNum, "Pass");
 			
 		}
 		driver.close();
