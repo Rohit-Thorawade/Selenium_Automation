@@ -3,13 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.bridgelabz.datadriven.parameterizedTest.ParameterizedTest">
+      <class name="com.bridgelabz.seleniumpractice.concept.TestClass">
         <methods>
-          <include name="testFbLogin"/>
-          <include name="setup"/>
-          <include name="teardown"/>
+          <include name="openBrowser"/>
+          <include name="testLogin" invocation-numbers="0"/>
         </methods>
-      </class> <!-- com.bridgelabz.datadriven.parameterizedTest.ParameterizedTest -->
+      </class> <!-- com.bridgelabz.seleniumpractice.concept.TestClass -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -17,7 +17,7 @@ public class ParameterizedTest {
 	public void setup()
 	{
 
-		System.setProperty("webdriver.chrome.driver", "/home/admin-1/eclipse-workspace/SeleniumDemo/driver/chromedriver");
+		System.setProperty("webdriver.chrome.driver", "/home/admin-1/eclipse-workspace/Selenium/driver/chromedriver");
 		driver = new ChromeDriver();
 		driver.get("https://www.facebook.com/");
 	}
