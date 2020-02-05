@@ -13,7 +13,7 @@ public class BaseClass {
 	static WebDriver driver;
 	static {
 		System.setProperty("webdriver.chrome.driver",
-				"/home/admin-1/eclipse-workspace/SeleniumDemo/driver/chromedriver");
+				"/home/admin-1/eclipse-workspace/Selenium/driver/chromedriver");
 		
 		driver =new ChromeDriver();
 		driver.manage().window().maximize();
