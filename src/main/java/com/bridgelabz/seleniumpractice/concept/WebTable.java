@@ -1,3 +1,8 @@
+/**
+ * @author Rohit Thorawade
+ * @purpose Implementing program to read PDF file 
+ *
+ */
 package com.bridgelabz.seleniumpractice.concept;
 
 import java.util.List;

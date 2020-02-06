@@ -1,3 +1,8 @@
+/**
+ * @author Rohit Thorawade
+ * @purpose Reading data from pdf
+ *
+ */
 package com.bridgelabz.seleniumpractice.concept;
 
 import java.io.FileInputStream;

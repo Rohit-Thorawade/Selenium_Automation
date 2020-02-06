@@ -1,3 +1,8 @@
+/**
+ * @author Rohit Thorawade
+ * @purpose Implementing applets program
+ *
+ */
 package com.bridgelabz.datadriven.selenium;
 
 import java.util.concurrent.TimeUnit;

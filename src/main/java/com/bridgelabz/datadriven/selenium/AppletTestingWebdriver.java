@@ -1,10 +1,15 @@
+/**
+ * @author Rohit Thorawade
+ * @purpose Implementing applets program
+ *
+ */
 package com.bridgelabz.datadriven.selenium;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
 
-public class appletTestingWebdriver  extends BaseClass{
+public class AppletTestingWebdriver  extends BaseClass{
 	
 	
 	

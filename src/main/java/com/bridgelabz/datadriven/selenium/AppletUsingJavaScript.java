@@ -1,3 +1,8 @@
+/**
+ * @author Rohit Thorawade
+ * @purpose Implementing applets program using javascript
+ *
+ */
 package com.bridgelabz.datadriven.selenium;
 
 import org.openqa.selenium.JavascriptExecutor;
